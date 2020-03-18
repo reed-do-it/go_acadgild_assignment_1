@@ -1,0 +1,6 @@
+To do 2 workspaces, you add the second path to the end of your GOPATH variable, separated with a colon.
+
+However, new packages are always downloaded into the first directory in the list.  Therefore, it would probably be best to add an alias to your .bash_profile for a shortcut to swap the order in GOPATH.  So you do like:
+
+alias path1='export GOPATH=$HOME/go1:$HOME/go2'
+alias path2='export GOPATH=$HOME/go2:$HOME/go1'
